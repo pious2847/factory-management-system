@@ -9,19 +9,25 @@ const MaterialsSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    unite:{
+    unite: {
         type: String,
         required: true
     },
-    weight:{
+    weight: {
         type: Number,
         required: true
     },
-    unitePrice:{
+    unitePrice: {
         type: Number,
         required: true
     },
-    
+    description: {
+        type: String,
+        required: true,
+        minlength: 10,
+        maxlength: 200,
+    },
+
 });
 
 const Materials = mongoose.model('Materials', MaterialsSchema);

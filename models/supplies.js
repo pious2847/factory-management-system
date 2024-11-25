@@ -3,19 +3,7 @@ const mongoose = require('mongoose');
 // creating supplies model
 
 const supplySchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    unique: true,
-    minlength: 5,
-    maxlength: 50,
-  },
-  description: {
-    type: String,
-    required: true,
-    minlength: 10,
-    maxlength: 200,
-  },
+
   quantity: {
     type: Number,
     required: true,
